@@ -1,0 +1,28 @@
+#game-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-board-row {
+  display: flex;
+  width: fit-content;
+}
+
+.game-board-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.5vw;
+  height: 7.5vw;
+  border: 1px solid #E8E8E8;
+}
+
+.game-board-item p {
+  color: white;
+  font-size: 2.5vw;
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=Game.css.map */

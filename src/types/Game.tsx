@@ -8,9 +8,11 @@ export interface BoardRow {
 
 export interface BoardItem {
     owner: BoardItemOwner
-    id: number
+    id: number,
+    winningItem: boolean
 }
 
+export type GameMode = 'friend' | 'ai';
 export type BoardRows = [BoardRow, BoardRow, BoardRow];
 export type BoardRowItems = [BoardItem, BoardItem, BoardItem];
 export type BoardItemOwner = GamePlayer | '';

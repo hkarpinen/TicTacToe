@@ -14,12 +14,18 @@ against friends on the same machine.
 #### Screenshots!
 2K Resolution Desktop
 
-![Screenshot](/docs/image/desktop.PNG)
+<p align="center">
+    <img src="https://github.com/kuolintoive/TicTacToe/blob/main/docs/image/desktop.PNG">
+</p>
 
 Mobile Landscape
 
-![Screenshot](/docs/image/mobile-landscape.PNG)
+<p align="center">
+    <img src="https://github.com/kuolintoive/TicTacToe/blob/main/docs/image/mobile-landscape.PNG">
+</p>
 
 Mobile Portrait
 
-![Screenshot](/docs/image/mobile-portrait.PNG)
+<p align="center">
+    <img src="https://github.com/kuolintoive/TicTacToe/blob/main/docs/image/mobile-portrait.PNG">
+</p>

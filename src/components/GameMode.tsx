@@ -19,18 +19,21 @@ interface Props extends ReduxProps {
 
 const GameModeDropdown = (props: Props) => {
     const dispatch = useAppDispatch();
+    // If there is an active game, disabled the dropdown.
     if(props.activeGame) {
         return  <DropdownButton id="game-mode" title={props.gameMode.toUpperCase()} disabled>
             <Dropdown.Item>AI</Dropdown.Item>
         </DropdownButton>
     }
 
+    // If the gamemode is changed to AI, update the state. 
     if(props.gameMode === 'friend') {
         return  <DropdownButton id="game-mode" title="Friend">
             <Dropdown.Item onClick={() => dispatch(setGameMode('ai'))}>AI</Dropdown.Item>
         </DropdownButton>
     }
 
+    // If the gamemode is changed to friend, update the state. 
     return  <DropdownButton id="game-mode" title="AI">
                 <Dropdown.Item onClick={() => dispatch(setGameMode('friend'))}>Friend</Dropdown.Item>
             </DropdownButton>

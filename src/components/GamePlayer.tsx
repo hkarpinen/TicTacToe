@@ -20,6 +20,7 @@ interface Props extends ReduxProps {
 
 const GamePlayerDropdown = (props: Props) => {
     const dispatch = useAppDispatch();
+    // If there is an active game, disable the dropdown.
     if(props.activeGame) {
         return  <DropdownButton id="game-start-player" title={`Player: ${props.selectedPlayer.toUpperCase()}`}
         disabled={true}>
@@ -27,12 +28,14 @@ const GamePlayerDropdown = (props: Props) => {
                 </DropdownButton>
     }
 
+    // If the player is changed to O, update the state. 
     if(props.selectedPlayer === 'x') {
         return  <DropdownButton id="game-start-player" title={`Player: ${props.selectedPlayer.toUpperCase()}`}>
                 <Dropdown.Item onClick={() => dispatch(setSelectedPlayer('o'))}>O</Dropdown.Item>
             </DropdownButton>
     }
 
+    // If the player is changed to X, update the state. 
     return  <DropdownButton id="game-start-player" title={`Player: ${props.selectedPlayer.toUpperCase()}`}>
                 <Dropdown.Item onClick={() => dispatch(setSelectedPlayer('x'))}>X</Dropdown.Item>
             </DropdownButton>

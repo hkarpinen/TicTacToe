@@ -18,6 +18,7 @@ interface Props extends ReduxProps {
 
 
 const GameTurn = (props: Props) => {
+    // If the winner is X, display X.
     if(props.winner === 'x') {
         return <Container id='game-turn'>
             <p id='game-turn-title' style={{ color: '#90EE90' }}>Winner!</p>
@@ -25,6 +26,7 @@ const GameTurn = (props: Props) => {
         </Container>
     }
 
+    // If the winner is O, display O.
     if(props.winner === 'o') {
         return <Container id='game-turn'>
             <p id='game-turn-title' style={{ color: '#90EE90' }}>Winner!</p>
@@ -32,6 +34,7 @@ const GameTurn = (props: Props) => {
         </Container>
     }
 
+    // If the is no winner, display the next player. 
     return <Container id='game-turn'>
     <p id='game-turn-title'>Your Turn!</p>
         <p>{props.nextPlayer}</p>

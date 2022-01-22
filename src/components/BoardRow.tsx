@@ -7,6 +7,7 @@ interface Props {
     items: BoardRowItems
 }
 
+// Map items to invididual items. 
 export const GameBoardRow = (props: Props) => {
     return <Container className="game-board-row">
         {props.items.map(item => {

@@ -1,9 +1,19 @@
+#app {
+  height: 100%;
+}
+
+#game-row {
+  display: flex;
+  height: 100%;
+}
+
 #game-board {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  margin: 0;
+  width: fit-content;
 }
 
 .game-board-row {
@@ -32,9 +42,10 @@
 
 #game {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: fit-content;
+  justify-content: center;
+  width: 100% !important;
+  height: calc(100vh - 58px);
 }
 
 #game-header {
@@ -58,7 +69,7 @@
   position: relative;
   margin: 0;
   color: white;
-  font-size: clamp(25px, 3vw, 50px);
+  font-size: clamp(25px, 2.5vw, 50px);
   font-weight: lighter;
   height: fit-content;
 }

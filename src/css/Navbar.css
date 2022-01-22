@@ -1,0 +1,13 @@
+#top-nav-bar {
+  background: #0184B7 !important;
+}
+
+#top-nav-bar .container-fluid .navbar-brand {
+  color: white !important;
+}
+
+#top-nav-bar .container-fluid .navbar-collapse div a {
+  color: white !important;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

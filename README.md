@@ -13,10 +13,13 @@ against friends on the same machine.
 
 #### Screenshots!
 2K Resolution Desktop
+
 ![Screenshot](/docs/image/desktop.PNG)
 
 Mobile Landscape
+
 ![Screenshot](/docs/image/mobile-landscape.PNG)
 
 Mobile Portrait
+
 ![Screenshot](/docs/image/mobile-portrait.PNG)

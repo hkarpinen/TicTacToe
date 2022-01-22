@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .game-board-row {
@@ -14,8 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 75px;
+  min-height: 75px;
   width: 7.5vw;
   height: 7.5vw;
   border: 1px solid #E8E8E8;
@@ -27,6 +28,90 @@
   font-size: 5vh;
   font-weight: lighter;
   margin: 0;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+#game-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+#game-turn {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#game-turn p {
+  position: relative;
+  margin: 0;
+  color: white;
+  font-size: clamp(25px, 3vw, 50px);
+  font-weight: lighter;
+  height: fit-content;
+}
+
+#game-turn-title {
+  text-decoration: underline;
+}
+
+#game-header {
+  display: flex;
+  padding: 0 !important;
+  border: 1px solid #E8E8E8;
+  min-width: 225px;
+  min-height: 225px;
+  height: 22.5vw;
+  width: 22.5vw;
+  margin: 25px;
+}
+
+#game-controls {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-top: 1px solid #E8E8E8;
+  height: fit-content !important;
+}
+
+#game-controls button {
+  flex-grow: 1;
+  background: none;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+}
+
+#game-controls .dropdown {
+  display: flex;
+}
+
+#game-controls .dropdown div {
+  background: #181818;
+  border: 1px solid #E8E8E8;
+  padding: 0;
+}
+
+#game-controls .dropdown div a {
+  background: #181818;
+  color: white;
+}
+
+#game-controls .dropdown div a:hover {
+  background: none;
+  border: 1px solid #E8E8E8;
 }
 
 /*# sourceMappingURL=Game.css.map */

@@ -8,7 +8,7 @@ import { GameData } from '../types/Game';
 import { GameBoardRow } from './BoardRow';
 
 const mapState = (state: RootState) => ({
-    data: state.gameBoardSlice.data
+    data: state.gameBoardSlice.game.data
 })
 
 const connector = connect(mapState);

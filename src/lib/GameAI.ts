@@ -36,6 +36,7 @@ const EdgeResponses: MoveResponse[] = [
     { ids: [4, 7], response: [1] },
     { ids: [5, 8], response: [2] },
     { ids: [3, 9], response: [6] },
+    { ids: [6, 9], response: [3] }
 ]
 
 
